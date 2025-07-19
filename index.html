@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vibe Match</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="header">
+        <h1>JS-Harmony</h1>
+        <div id="liked-count" class="liked-count">
+            <i class="fas fa-heart"></i> <span id="liked-num">0</span>
+        </div>
+    </div>
+
+    <div id="app-container">
+        <div id="loading-spinner" class="loading-spinner">
+            <div class="spinner"></div>
+            <p>Loading profiles...</p>
+        </div>
+        <div id="profile-card-container">
+            </div>
+        <div id="actions">
+            <button id="nope-btn" class="action-btn nope-btn" aria-label="Nope">
+                <i class="fas fa-times"></i> Nope
+            </button>
+            <button id="like-btn" class="action-btn like-btn" aria-label="Like">
+                <i class="fas fa-heart"></i> Like
+            </button>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
